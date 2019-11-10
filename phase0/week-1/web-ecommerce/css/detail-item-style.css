@@ -1,0 +1,33 @@
+
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+#items-detail-cont{
+    margin-top: 100px;
+}
+
+#items-detail-cont img{
+    border: 1px solid;
+    width: 500px;
+    height: auto;
+    margin: 25px;
+    display: inline-grid;
+}
+
+#items-detail-cont #items-detail-desc{
+    width: auto;
+    height: auto;
+    border: 1px solid;
+    margin: 25px;
+    display: inline-grid;
+}
