@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="../css/login-user.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/sign-up-user.css">
+    <title>Sign Up</title>
+</head>
+<body>
+<center>
+    <div id="container">
+        <header>
+            <h1>Buat Akun</h1>
+        </header>
+        <form action="../index.html" method="POST">
+            <table>
+                <tr id="nama_depan">
+                    <td>Nama Depan</td>
+                    <td>:</td>
+                    <td><input name="first" type="text" id="first" minlength="1" maxlength="15" required></td>
+                </tr>
+                <tr id="nama-belakang">
+                    <td>Nama Belakang</td>
+                    <td>:</td>
+                    <td><input name="last" type="text id=" last" minlength="1" maxlength="15" required></td>
+                </tr>
+                <tr id="username">
+                    <td>Username</td>
+                    <td>:</td>
+                    <td><input id="un" name="username" type="text" minlength="1" maxlength="15" required></td>
+                </tr>
+                <tr id="email">
+                    <td>Email Anda</td>
+                    <td>:</td>
+                    <td><input id="em" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                               required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>:</td>
+                    <td><input type="password" name="pw" id="password"></td>
+                </tr>
+                <tr id="gender">
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">Laki-Laki
+                        <input type="radio" name="gender" id="female" value="female">Perempuan
+                    </td>
+                </tr>
+                <tr id="Lahir">
+                    <td>Tempat Tanggal Lahir</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="lahir" id="lahir" required minlength="3" maxlength="10">
+                        <select name=Tgl>
+                            <option name=Tgl>Tgl</option>
+                            <option name=Tgl>1</option>
+                            <option name=Tgl>2</option>
+                            <option name=Tgl>3</option>
+                            <option name=Tgl>4</option>
+                            <option name=Tgl>5</option>
+                            <option name=Tgl>6</option>
+                            <option name=Tgl>7</option>
+                            <option name=Tgl>8</option>
+                            <option name=Tgl>9</option>
+                            <option name=Tgl>10</option>
+                            <option name=Tgl>11</option>
+                            <option name=Tgl>12</option>
+                            <option name=Tgl>13</option>
+                            <option name=Tgl>14</option>
+                            <option name=Tgl>15</option>
+                            <option name=Tgl>16</option>
+                            <option name=Tgl>17</option>
+                            <option name=Tgl>18</option>
+                            <option name=Tgl>19</option>
+                            <option name=Tgl>20</option>
+                            <option name=Tgl>21</option>
+                            <option name=Tgl>22</option>
+                            <option name=Tgl>23</option>
+                            <option name=Tgl>24</option>
+                            <option name=Tgl>26</option>
+                            <option name=Tgl>27</option>
+                            <option name=Tgl>28</option>
+                            <option name=Tgl>29</option>
+                            <option name=Tgl>30</option>
+                            <option name=Tgl>31</option>
+                        </select>
+                        <select name=Bln>
+                            <option name=Bln>Bln</option>
+                            <option name=Bln>Januari</option>
+                            <option name=Bln>Februari</option>
+                            <option name=Bln>Maret</option>
+                            <option name=Bln>April</option>
+                            <option name=Bln>Mei</option>
+                            <option name=Bln>Juni</option>
+                            <option name=Bln>Juli</option>
+                            <option name=Bln>Agustus</option>
+                            <option name=Bln>September</option>
+                            <option name=Bln>Oktober</option>
+                            <option name=Bln>November</option>
+                            <option name=Bln>Desember</option>
+                        </select>
+                        <select name=Thn>
+                            <option name=Thn>Thn</option>
+                            <option name=Thn>2012</option>
+                            <option name=Thn>2011</option>
+                            <option name=Thn>2010</option>
+                            <option name=Thn>2009</option>
+                            <option name=Thn>2008</option>
+                            <option name=Thn>2007</option>
+                            <option name=Thn>2006</option>
+                            <option name=Thn>2005</option>
+                            <option name=Thn>2004</option>
+                            <option name=Thn>2003</option>
+                            <option name=Thn>2002</option>
+                            <option name=Thn>2001</option>
+                            <option name=Thn>2000</option>
+                            <option name=Thn>1999</option>
+                            <option name=Thn>1998</option>
+                            <option name=Thn>1997</option>
+                            <option name=Thn>1996</option>
+                            <option name=Thn>1995</option>
+                            <option name=Thn>1994</option>
+                            <option name=Thn>1993</option>
+                            <option name=Thn>1992</option>
+                            <option name=Thn>1991</option>
+                            <option name=Thn>1990</option>
+                    </td>
+                </tr>
+                <tr id="telepon">
+                    <td>No. Telepon</td>
+                    <td>:</td>
+                    <td>
+                        <select name="no">
+                            <option value="no">+62</option>
+                            <option value="no">+1</option>
+                            <option value="no">61</option>
+                            <option value="no">69</option>
+                        </select>
+                        <input style="number" name="phone" id="phone" required minlength="11" maxlength="11">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                    <td>
+                        <input type="submit" class="button" value="Submit" id="submit-button">
+                        <a href="login-user.html" class="button">Login</a>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</center>
+</body>
+</center>
+</html>

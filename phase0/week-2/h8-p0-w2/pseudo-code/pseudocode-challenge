@@ -1,0 +1,57 @@
+1. Newton Second Law
+START
+DECLARE "m" AS massa
+DECLARE "a" AS percepatan
+DECLARE "ef" AS resultan
+ASSIGN "m" EQUAL TO "600"
+ASSIGN "a" EQUAL TO "2"
+COMPUTE "m" MULTIPLY BY "a"
+ASSIGN "ef" EQUAL TO COMPUTE RESULT
+DISPLAY "ef"
+END
+
+2. Tahun Kabisat
+START
+DECLARE "t" AS tahun
+ASSIGN "t" EQUAL TO ANY FOUR DIGIT NUMBER
+IF ("t" MOD 4 EQUAL TO 0
+    AND "t" MOD 100 NOT EQUAL TO 0)
+        THEN RETURN "kabisat"
+ELSE IF ("t" MOD 4 EQUAL TO 0
+    AND "t" MOD 100 EQUAL TO 0
+    AND "t" MOD 400 EQUAL TO 0)
+        THEN RETURN "kabisat"
+ELSE
+    RETURN "not kabisat"
+END IF
+SHOW RETURN
+END
+
+3. Laundry Day
+START
+DECLARE "p" AS pakaian
+DECLARE "jp" AS jumlah pakaian
+ASSIGN "jp" EQUAL TO "20"
+ASSIGN "p" EQUAL TO "0"
+WHILE "p" LESS THAN "jp"
+    DO INCREMENT "p" BY "1"
+ELSE
+    DO cuci
+WHILE END
+END
+
+4. Periksa Kuku
+START
+DECLARE "s" AS siswa
+DECLARE "k" AS kuku
+DECLARE "js" AS jumlah siswa
+ASSIGN "js" EQUAL TO "40"
+ASSIGN "s" EQUAL TO "0"
+DO (INCREMENT "s" BY "1")
+    DO periksa "k" OF "s"
+    IF "k" EQUAL TO "panjang"
+        THEN puji "s"
+        ELSE hukum "s"
+    END IF
+LOOP UNTIL ("s" EQUAL TO "js")
+END
