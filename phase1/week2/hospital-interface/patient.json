@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name": "michael",
+        "disease": [
+            "batuk",
+            "flu",
+            "pilek"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "michael",
+        "disease": [
+            "batuk",
+            "flu",
+            "pilek"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "melissa",
+        "disease": [
+            "sakit",
+            "kaki"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "melissa",
+        "disease": [
+            "sakit_kepala"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "andi",
+        "disease": [
+            "sakit_kepala",
+            "sakit_kaki",
+            "sakit_hati"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "andre",
+        "disease": [
+            "sakit-lidah"
+        ]
+    }
+]

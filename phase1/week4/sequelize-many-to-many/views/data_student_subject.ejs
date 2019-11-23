@@ -1,0 +1,46 @@
+<% include ./partials/head %>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<div class="jumbotron">
+    <form method="post" action="">
+        <div class="form-row">
+            <div class="form-group col-md-6">ID</div>
+            <div class="form-group col-md-6">
+                <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Student ID"
+                        readonly
+                        value="<%= data.student.id %>"
+                        name="studentId"
+                        id="studentId"
+                >
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">First Name</div>
+            <div class="form-group col-md-6"><b><%= data.student.first_name %></b></div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">Last Name</div>
+            <div class="form-group col-md-6"><b><%= data.student.last_name %></b></div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">Email</div>
+            <div class="form-group col-md-6"><b><%= data.student.email %></b></div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="idSubject">Subject</label>
+            </div>
+            <div class="form-group col-md-6">
+                <select class="form-control" name="subjectId" id="subjectId">
+                    <% data.subject.forEach(e => { %>
+                        <option value="<%= e.dataValues.id %>"><%= e.dataValues.subject_name %></option>
+                    <% }) %>
+                </select>
+            </div>
+        </div>
+        <button type="Add Subject" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<% include ./partials/footer %>

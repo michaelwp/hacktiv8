@@ -1,0 +1,17 @@
+# General Command
+------------------
+help
+list
+add <task_content>
+findbyid <task_id>
+delete <task_id>
+complete <task_id>
+uncomplete <task_id>
+tag <task_id> <tag_name_1> ... <tag_name_N>
+
+# Spesific list Command
+------------------
+list:<argument>
+arguments :
+completed
+uncompleted

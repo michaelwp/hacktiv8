@@ -1,0 +1,20 @@
+Masukkan Query kalian disini.
+
+RELEASE 0
+select Customers.firstName, Tracks.title, Tracks.artist, Tracks.length
+from Customers JOIN Customer_Tracks ON Customer_Tracks.customerId = Customers.id
+join Tracks ON Tracks.id = Customer_Tracks.trackId
+order by Customers.firstName
+
+RELEASE 1
+select genre, count(genre) as trackCount, sum(price)
+from Tracks group by genre having trackCount > 2
+
+RELEASE 2
+select  Customers.id, Customers.firstname || ' ' || Customers.lastName as CustomerName,
+count(Customer_Tracks.trackId) as TrackCount, sum(Tracks.price) as TotalPrice
+from Customers left join Customer_Tracks
+on Customer_Tracks.customerId = Customers.id
+left join Tracks on Tracks.id = Customer_Tracks.trackId
+group by Customers.id order by TotalPrice DESCC
+

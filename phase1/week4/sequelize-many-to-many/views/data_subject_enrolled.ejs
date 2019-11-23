@@ -1,0 +1,40 @@
+<% include ./partials/head %>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<div class="jumbotron">
+    <h1><%= dataSubjects.dataValues.subject_name %></h1>
+    <br/>
+    <form method="post" action="">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">Name Student</th>
+                <th scope="col">Score</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% dataSubjects.dataValues.students.forEach((e, index) => { %>
+                <tr>
+                    <td><%= index + 1 %></td>
+                    <td><%= e.dataValues.Studentsubject.id %></td>
+                    <td>
+                        <%= e.dataValues.first_name %>
+                        <%= e.dataValues.last_name %>
+                    </td>
+                    <td>
+                        <% if (!e.dataValues.Studentsubject.score) { %>
+                            <a class="btn btn-success"
+                               href="/subjects/<%= e.dataValues.Studentsubject.id %>/give-score"
+                               role="button">Give Score</a>
+                        <% } else { %>
+                            <%= scoreLetter(e.dataValues.Studentsubject.score) %>
+                        <% } %>
+                    </td>
+                </tr>
+            <% }) %>
+            </tbody>
+        </table>
+    </form>
+</div>
+<% include ./partials/footer %>

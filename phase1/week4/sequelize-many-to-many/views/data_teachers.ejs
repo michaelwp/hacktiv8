@@ -1,0 +1,43 @@
+<% include ./partials/head %>
+<div class="jumbotron">
+    <p>
+        <a class="btn btn-primary" href="/teachers/add" role="button">Add New</a>
+    </p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Subject</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% dataTeachers.forEach((e, index) => { %>
+            <tr>
+                <th scope="row"><%= index + 1 %></th>
+                <td><%= e.dataValues.id %></td>
+                <td><%= e.dataValues.first_name %></td>
+                <td><%= e.dataValues.last_name %></td>
+                <td><%= e.dataValues.email %></td>
+                <td>
+                    <% if (e.dataValues.subjects.length === 0) { %>
+                        <div class="warn">undefined</div>
+                    <% } else { %>
+                        <% e.dataValues.subjects.forEach(n => { %>
+                            <b><%= n.dataValues.subject_name %></b>
+                        <% }) %>
+                    <% } %>
+                </td>
+                <td>
+                    <a class="btn btn-success" href="/teachers/edit/<%= e.dataValues.id %>" role="button">Edit</a>
+                    <a class="btn btn-danger" href="/teachers/delete/<%= e.dataValues.id %>" role="button">Delete</a>
+                </td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</div>
+<% include ./partials/footer %>

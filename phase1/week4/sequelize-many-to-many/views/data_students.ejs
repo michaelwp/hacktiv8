@@ -1,0 +1,35 @@
+<% include ./partials/head %>
+<div class="jumbotron">
+    <p>
+        <a class="btn btn-primary" href="/students/add" role="button">Add New</a>
+    </p>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% dataStudents.forEach((e, index) => { %>
+            <tr>
+                <th scope="row"><%= index + 1 %></th>
+                <td><%= e.dataValues.id %></td>
+                <td><%= e.dataValues.first_name %></td>
+                <td><%= e.dataValues.last_name %></td>
+                <td><%= e.dataValues.email %></td>
+                <td>
+                    <a class="btn btn-primary" href="/students/<%= e.dataValues.id %>/add-subject"
+                       role="button">Add Subject</a>
+                    <a class="btn btn-success" href="/students/edit/<%= e.dataValues.id %>" role="button">Edit</a>
+                    <a class="btn btn-danger" href="/students/delete/<%= e.dataValues.id %>" role="button">Delete</a>
+                </td>
+            </tr>
+        <% }) %>
+        </tbody>
+    </table>
+</div>
+<% include ./partials/footer %>

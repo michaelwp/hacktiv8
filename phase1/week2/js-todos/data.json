@@ -1,0 +1,33 @@
+[
+  {
+    "id": 3,
+    "task": "ngoding",
+    "completed": true,
+    "tag": [
+      "wajib",
+      "passion"
+    ],
+    "created": "Sat Nov 09 2019 21:26:40 GMT+0700 (Western Indonesia Time)"
+  },
+  {
+    "id": 2,
+    "task": "makan",
+    "completed": false,
+    "tag": [
+      "wajib",
+      "hobby",
+      "passion"
+    ],
+    "created": "Sat Nov 09 2019 21:10:01 GMT+0700 (Western Indonesia Time)"
+  },
+  {
+    "id": 1,
+    "task": "minum",
+    "completed": true,
+    "tag": [
+      "hobby",
+      "passion"
+    ],
+    "created": "Sat Nov 09 2019 21:09:57 GMT+0700 (Western Indonesia Time)"
+  }
+]

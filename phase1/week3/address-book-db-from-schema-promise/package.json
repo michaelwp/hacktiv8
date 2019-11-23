@@ -1,0 +1,29 @@
+{
+  "name": "address-book-db-from-schema",
+  "version": "0.0.1",
+  "description": "Address Book",
+  "main": "addressbook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rubi Henjaya",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "q": "^1.4.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.14.0",
+    "babel-preset-es2015": "6.14.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king-fox-2019/address-book-db-from-schema.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/king-fox-2019/address-book-db-from-schema/issues"
+  },
+  "homepage": "https://github.com/king-fox-2019/address-book-db-from-schema#readme"
+}

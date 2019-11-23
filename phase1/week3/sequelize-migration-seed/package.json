@@ -1,0 +1,25 @@
+{
+  "name": "sequelize-migration-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/king-fox-2019/sequelize-migration-seed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/king-fox-2019/sequelize-migration-seed/issues"
+  },
+  "homepage": "https://github.com/king-fox-2019/sequelize-migration-seed#readme",
+  "dependencies": {
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.2"
+  }
+}

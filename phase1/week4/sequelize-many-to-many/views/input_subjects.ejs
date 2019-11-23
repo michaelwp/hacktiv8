@@ -1,0 +1,19 @@
+<% include ./partials/head %>
+<div class="jumbotron">
+    <form method="post" action="">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="subject_name">Subject Name</label>
+                <input type="text" class="form-control" id="subject_name" name="subject_name"
+                       placeholder="Enter The Subject Name">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="teacherId">Teacher ID</label>
+                <input type="text" class="form-control" id="teacherId" name="teacherId"
+                       placeholder="Enter the teacher id">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<% include ./partials/footer %>

@@ -1,0 +1,32 @@
+{
+  "peanut butter" : [
+    { "name": "flour", "amount": "1 cup"},
+    { "name": "sugar", "amount": "2 cup"},
+    { "name": "butter", "amount": "1 cup"}
+  ],
+  "chocolate chip" : [
+    { "name": "chips", "amount": "1 cup"},
+    { "name": "butter", "amount": "2 cup"},
+    { "name": "glutten", "amount": "1 cup"}
+   ],
+   "chocolate cheese" : [
+    { "name": "cheese", "amount": "1 cup"},
+    { "name": "sugar", "amount": "2 cup"},
+    { "name": "flavor", "amount": "1 cup"}
+   ],
+   "chocolate butter" : [
+    { "name": "flour", "amount": "1 cup"},
+    { "name": "cinnamon", "amount": "2 cup"},
+    { "name": "butter", "amount": "1 cup"}
+   ],
+   "chocolate chip crumbled" : [
+       { "name": "choco", "amount": "1 cup"},
+       { "name": "sugar", "amount": "2 cup"},
+       { "name": "flavor", "amount": "1 cup"}
+      ],
+      "peanut butter crumbled" : [
+       { "name": "flour", "amount": "1 cup"},
+       { "name": "cinnamon", "amount": "2 cup"},
+       { "name": "butter", "amount": "1 cup"}
+      ]
+}

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "username": "michael",
+        "password": "123456",
+        "role": "dokter",
+        "loggedIn": false
+    },
+    {
+        "id": 2,
+        "username": "andi",
+        "password": "123456",
+        "role": "admin",
+        "loggedIn": false
+    },
+    {
+        "id": 3,
+        "username": "panjul",
+        "password": "123456",
+        "role": "satpam",
+        "loggedIn": false
+    },
+    {
+        "id": 4,
+        "username": "melissa",
+        "password": "123456",
+        "role": "dokter",
+        "loggedIn": false
+    },
+    {
+        "id": 5,
+        "username": "andix",
+        "password": "1234567",
+        "role": "dokter",
+        "loggedIn": false
+    },
+    {
+        "id": 6,
+        "username": "andix-jap",
+        "password": "1234567",
+        "role": "staff",
+        "loggedIn": false
+    },
+    {
+        "id": 7,
+        "username": "roy",
+        "password": "123",
+        "role": "staff",
+        "loggedIn": false
+    }
+]

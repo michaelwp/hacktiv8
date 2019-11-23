@@ -1,0 +1,68 @@
+<%- include partials/head %>
+<%- include partials/menu.ejs %>
+<h3><%= message %></h3>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>User Name</th>
+        <th>Type</th>
+        <th>Age</th>
+        <th>Exp</th>
+        <th>Level</th>
+        <th>Tags</th>
+    </tr>
+    <tr>
+        <td><%= dataMember.dataValues.firstName %></td>
+        <td><%= dataMember.dataValues.lastName %></td>
+        <td><%= dataMember.dataValues.username %></td>
+        <td style="background-color: <%= memberTypeColor(dataMember.type) %>"><%= dataMember.dataValues.type %></td>
+        <td><%= dataMember.dataValues.age %></td>
+        <td><%= dataMember.dataValues.exp %></td>
+        <td><%= dataMember.dataValues.level %></td>
+        <td>
+            <% dataMember.dataValues.Tags.forEach((e, index)=>{ %>
+                <%= index + 1 %>.
+                <%= e.name %><br>
+            <% }) %>
+        </td>
+    </tr>
+</table>
+
+<form action="/members/<%= dataMember.dataValues.id %>/createtag" method="post">
+    <table>
+        <tr>
+            <td>Tag :</td>
+            <td><input type="text" id="tag" name="tag"></td>
+            <td><input type="submit" value="save"></td>
+        </tr>
+    </table>
+</form>
+
+<form action="/members/<%= dataMember.dataValues.id %>/addexp" method="post">
+    <table>
+        <tr>
+            <td><input type="submit" value="Add 500XP"></td>
+        </tr>
+    </table>
+</form>
+
+<form action="" method="post">
+    <table>
+        <tr>
+            <td><input type="submit" value="Delete"></td>
+        </tr>
+    </table>
+</form>
+
+<% if (dataMember.type === "free") { %>
+    <form action="/members/<%= dataMember.dataValues.id %>/upgrade" method="post">
+        <table>
+            <tr>
+                <td><input type="submit" value="Gold"></td>
+            </tr>
+        </table>
+    </form>
+<% } %>
+
+<%- include partials/foot %>
